@@ -1,0 +1,10 @@
+[Unit]
+Description=Run app in container
+
+[Service]
+ExecStart=/home/justin/Shares/app-in-container/run-app-in-container-server.fish %i
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
